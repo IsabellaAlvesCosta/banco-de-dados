@@ -1,6 +1,6 @@
 import mysql from 'mysql2/promise'
 
-typeCast: function (field, next) {
+typecast: function (field, next) {
 
 if(field.type === 'TINY' && field.length ===1){
 
@@ -16,13 +16,13 @@ return next();
 
 const con = await mysql.createConnection({
 
-host: process.env.MYSQL_HOST,
+    host: process.env.MYSQL_HOST,
 
-user: process.env.MYSQL_USER,
+    user: process.env.MYSQL_USER,
 
-password: process.env.MYSQL_PWB,
+    password: process.env.MYSQL_PWB,
 
-database:process.env.MYSQL_DB
+    database: process.env.MYSQL_DB
 
 })
 
