@@ -1,4 +1,4 @@
-import { con } from '../repository/connection';
+import { con } from '../repository/connection.js';
 
 export async function inserirFilme(filme) {
 

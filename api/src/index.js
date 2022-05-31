@@ -23,6 +23,6 @@ server.use(usuarioController);
 
 server.use(filmeController);
 
-server.listen(process.env.PORT, ()  => console.log('Api conectada na porta ${process.env.PORT}'));
+server.listen(process.env.PORT, ()  => console.log(`Api conectada na porta ${process.env.PORT}`));
 
 console.log('BD conectado!');

@@ -1,5 +1,4 @@
-import { inserirFilme } from '…/repository/filmeRepository.js'
-
+import { inserirFilme } from '../repository/filmeRepository.js'
 import multer from 'multer'
 
 import { Router } from 'express'
